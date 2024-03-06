@@ -9,4 +9,3 @@ with open('../operations.json', 'r') as file:
 object_list = getting_list_operation(operations_list)
 
 
-

@@ -32,3 +32,4 @@ def getting_list_operation(array: list):
             list_.append(oper_n)
 
     return list_
+

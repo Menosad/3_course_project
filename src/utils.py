@@ -1,4 +1,3 @@
-import pprint
 from clases import Operation
 
 
@@ -31,7 +30,7 @@ def getting_list_operation(array: list):
     return list_
 
 
-def interval_selection(lst: list):
+def execut_selection(lst: list):
     interval = []
     for object in lst:
         if object.state == 'EXECUTED':
@@ -40,8 +39,8 @@ def interval_selection(lst: list):
 
 
 def conclusion(lst: list):
-    for operation in lst[:10]:
-        if operation.agent == None:
+    for operation in lst[:5]:
+        if operation.agent is None:
             print(f"{operation.f_date()} {operation.descrpt}\n"
                   f"{operation.check()}\n"
                   f"{operation.money()}")
@@ -49,3 +48,7 @@ def conclusion(lst: list):
             print(f"{operation.f_date()} {operation.descrpt}\n"
                   f"{operation.f_agent()} -> {operation.check()}\n"
                   f"{operation.money()}")
+
+
+def sum_func(a, b):
+    return a + b
